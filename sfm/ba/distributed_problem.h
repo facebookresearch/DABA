@@ -131,7 +131,7 @@ protected:
   virtual int PCG(int_t &num_iters, T &update_step_norm) const = 0;
   virtual int Retract(T stepsize) const = 0;
 
-  // distributed bundle adjustment subproblem infomation
+  // distributed bundle adjustment subproblem information
   const Option<T> m_option;
   int_t m_rank;
   int_t m_num_ranks;
