@@ -11,7 +11,7 @@ Official implementation of <a href="https://arxiv.org/abs/2305.07026">Decentrali
 </p>
 
 <p align="justify">
-In this work, we present <b>D</b>ecentralized and <b>A</b>ccelerated <b>B</b>undle <b>A</b>djustment (<b>DABA</b>), a method that addresses the compute and communication bottleneck for bundle adjustment problems of arbitrary scale. Despite limited peer-to-peer communication, DABA achieves provable convergence to first-order critical points under mild conditions. Through extensive benchmarking with public datasets, we have shown that DABA converges much faster than comparable decentralized baselines, with similar memory usage and communication load. Compared to centralized baselines using a single device, DABA, while being decentralized, yields <b>more accurate solutions</b> with significant speedups of up to <b>953.7x over Ceres and 174.6x over DeepLM</b>. 
+In this work, we present <b>D</b>ecentralized and <b>A</b>ccelerated <b>B</b>undle <b>A</b>djustment (<b>DABA</b>), a method that addresses the compute and communication bottleneck for bundle adjustment problems of arbitrary scale. Despite limited peer-to-peer communication, DABA achieves <em><b>provable convergence to first-order critical points</b></em> under mild conditions. Through extensive benchmarking with public datasets, we have shown that DABA converges much faster than comparable decentralized baselines, with similar memory usage and communication load. Compared to centralized baselines using a single device, DABA, while being decentralized, yields <em><b>more accurate solutions</b></em> with significant speedups of up to <em><b>953.7x over Ceres and 174.6x over DeepLM</b></em>. 
 </p>
 
 
