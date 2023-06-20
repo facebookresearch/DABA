@@ -85,9 +85,7 @@ void TransformReduceAsync(void *temp, size_t &temp_bytes, InputIterator input,
                           BinaryFunction binary_op, cudaStream_t stream) {
   auto input_it =
       sfm::utils::MakeTransformIterator<OutputType>(input, unary_op);
-  // using Input =
-  //     sfm::TransformInputIterator<OutputType, InputIterator, UnaryFunction>;
-  ReduceAsync(temp, temp_bytes, input_it, N, output, init, binary_op);
+  ReduceAsync(temp, temp_bytes, input_it, N, output, init, binary_op, stream);
 }
 
 template <typename InputIterator1, typename InputIterator2,

@@ -1209,6 +1209,7 @@ void DecomposeAndMergeLargeCluster(
               Vertex vertex = thrust::get<1>(edge);
 
               return cluster < targeted_number_of_clusters &&
+                     selected_vertex_indices[vertex] != -1 &&
                      cluster_scores[cluster] +
                              selected_vertex_cluster_score_out <=
                          max_cluster_score &&
